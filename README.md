@@ -1,3 +1,3 @@
 Today I Learned
 
-Just a tiny notes app help myself to record ideas.
+TIL is a tiny, lightweight notes app I built to quickly record and organize my ideas on the go.
