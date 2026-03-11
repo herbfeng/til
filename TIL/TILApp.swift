@@ -1,19 +1,11 @@
-//
-//  TILApp.swift
-//  TIL
-//
-//  Created by Herb on 3/10/26.
-//
-
 import SwiftUI
 import SwiftData
 
 @main
 struct TILApp: App {
+    // Shared container prevents multiple initializations (speed fix)
     var sharedModelContainer: ModelContainer = {
-        let schema = Schema([
-            Item.self,
-        ])
+        let schema = Schema([TILPost.self])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
         do {
